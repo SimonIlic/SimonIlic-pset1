@@ -141,136 +141,151 @@
 
     </RelativeLayout>
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TableRow
+        <TextView
+            android:text="Mr. Potatohead"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_height="wrap_content" />
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOff="Nose"
-                android:textOn="Nose"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/noseButton2"
-                android:onClick="changeNose"
-                android:checked="false"/>
-
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOff="Ears"
-                android:textOn="Ears"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/earsButton2"
-                android:onClick="changeEars"
-                android:checked="false" />
-
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOn="Mouth"
-                android:textOff="Mouth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/mouthButton2"
-                android:onClick="changeMouth"
-                android:checked="false"/>
-        </TableRow>
-
-        <TableRow
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.38">
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOff="Eyes"
-                android:textOn="Eyes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/eyesButton2"
-                android:onClick="changeEyes"
-                android:checked="false"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOn="Eyebrows"
-                android:textOff="Eyebrows"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/eyebrowsButton2"
-                android:onClick="changeEyebrows"
-                android:checked="false"/>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOff="Nose"
+                    android:textOn="Nose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/noseButton2"
+                    android:onClick="changeNose"
+                    android:checked="false"/>
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOn="Glasses"
-                android:textOff="Glasses"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/glassesButton2"
-                android:onClick="changeGlasses"
-                android:checked="false"/>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOff="Ears"
+                    android:textOn="Ears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/earsButton2"
+                    android:onClick="changeEars"
+                    android:checked="false" />
 
-        </TableRow>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOn="Mouth"
+                    android:textOff="Mouth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mouthButton2"
+                    android:onClick="changeMouth"
+                    android:checked="false"/>
+            </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOff="Arms"
-                android:textOn="Arms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/armsButton2"
-                android:onClick="changeArms"
-                android:checked="false"/>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOff="Eyes"
+                    android:textOn="Eyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eyesButton2"
+                    android:onClick="changeEyes"
+                    android:checked="false"/>
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOff="Moustache"
-                android:textOn="Moustache"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/moustacheButton2"
-                android:onClick="changeMoustache"
-                android:checked="false"/>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOn="Eyebrows"
+                    android:textOff="Eyebrows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eyebrowsButton2"
+                    android:onClick="changeEyebrows"
+                    android:checked="false"/>
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOn="Hat"
-                android:textOff="Hat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/hatButton2"
-                android:onClick="changeHat"
-                android:checked="false"/>
-        </TableRow>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOn="Glasses"
+                    android:textOff="Glasses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/glassesButton2"
+                    android:onClick="changeGlasses"
+                    android:checked="false"/>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            </TableRow>
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-            <ToggleButton
-                android:text="ToggleButton"
-                android:textOff="Shoes"
-                android:textOn="Shoes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/shoesButton2"
-                android:onClick="changeShoes"
-                android:checked="false" />
-        </TableRow>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOff="Arms"
+                    android:textOn="Arms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/armsButton2"
+                    android:onClick="changeArms"
+                    android:checked="false"/>
 
-    </TableLayout>
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOff="Moustache"
+                    android:textOn="Moustache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/moustacheButton2"
+                    android:onClick="changeMoustache"
+                    android:checked="false"/>
+
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOn="Hat"
+                    android:textOff="Hat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hatButton2"
+                    android:onClick="changeHat"
+                    android:checked="false"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:text="ToggleButton"
+                    android:textOff="Shoes"
+                    android:textOn="Shoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shoesButton2"
+                    android:onClick="changeShoes"
+                    android:checked="false" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
 
 </LinearLayout>
