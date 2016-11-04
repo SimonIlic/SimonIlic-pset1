@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="mprog.simon.simonilic_pset1.MainActivity"
+        android:layout_weight="0.53">
+
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+
+            app:srcCompat="@drawable/body"
+            android:id="@+id/body"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/arms"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/arms" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/eyes"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/eyes" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/eyebrows"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/eyebrows" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ears"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/ears" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/mouth"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/mouth" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/glasses"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/glasses" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/hat"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/hat" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/mustache"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body"
+            android:id="@+id/mustache" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/shoes"
+            android:layout_alignStart="@+id/body"
+            android:layout_alignParentTop="true"
+            android:id="@+id/shoes" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/nose"
+            android:id="@+id/nose"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/body" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOff="Nose"
+                android:textOn="Nose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noseButton"
+                android:onClick="changeNose"/>
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOff="Ears"
+                android:textOn="Ears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/earsButton"
+                android:onClick="changeEars"
+                android:tag="ears"/>
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOn="Mouth"
+                android:textOff="Mouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mouthButton"
+                android:onClick="changeMouth"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOff="Eyes"
+                android:textOn="Eyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eyesButton"
+                android:onClick="changeEyes"/>
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOn="Eyebrows"
+                android:textOff="Eyebrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eyebrowsButton"
+                android:onClick="changeEyebrows"/>
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOn="Glasses"
+                android:textOff="Glasses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/glassesButton"
+                android:onClick="changeGlasses"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOff="Arms"
+                android:textOn="Arms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/armsButton"
+                android:onClick="changeArms"/>
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOff="Moustache"
+                android:textOn="Moustache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MoustacheButton"
+                android:onClick="changeMoustache"/>
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOn="Hat"
+                android:textOff="Hat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hatButton"
+                android:onClick="changeHat"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:textOff="Shoes"
+                android:textOn="Shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoesButton"
+                android:onClick="changeShoes"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
