@@ -13,9 +13,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*
+    * Changes visibility of view based on if buttonview is checked.
+     */
     public void changeVisibility(View buttonView, View view) {
         boolean checked = ((ToggleButton) buttonView).isChecked();
 
+        // if checked set view visible else invisible
         if (checked)
         {
             view.setVisibility(view.VISIBLE);
@@ -26,7 +30,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    /*
+    * The following functions are called when the corresponding button is clicked
+    * Eech function calls changeVisibility with the button view and its corresponding
+    * image view
+     */
     public void changeEars(View view) {
         View imageView = findViewById(R.id.ears);
         changeVisibility(view, imageView);
